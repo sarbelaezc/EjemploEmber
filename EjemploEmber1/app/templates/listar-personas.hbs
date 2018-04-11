@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Nombre&emsp;</th>
+    <th>Contraseña&emsp;</th>
+    <th>Salario&emsp;</th>
+    <th>Genero</th>
+  </tr>
+  {{#each model.userlist as |users|}}
+    <tr>
+      <td>{{users.name}}</td>
+      <td>{{users.password}}</td>
+      <td>{{users.salary}}</td>
+      <td>{{users.gender}}</td>
+    </tr>
+  {{/each}}
+</table>
+
+{{outlet}}

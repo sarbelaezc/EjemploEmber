@@ -1,0 +1,23 @@
+<div class='register'>
+  <p>
+    Nombre:
+      {{input type='text' value=name}}
+  </p>
+  <p>
+    Contraseña:
+      {{input type='password' value=password}}
+  </p>
+  <p>
+    Salario:
+      {{input type='number' value=salary}}
+  </p>
+  <p>
+    Sexo:
+      {{input type='text' value=gender}}
+  </p>
+  <p>
+    <button type='button' {{action 'register' name password salary gender}}> Registrar </button>
+  </p>
+</div>
+
+{{outlet}}

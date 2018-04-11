@@ -1,0 +1,15 @@
+<div class='login'>
+  <p>
+    Usuario:
+      {{input type='text' value=username}}
+  </p>
+  <p>
+    Contraseña:
+      {{input type='password' value=password}}
+  </p>
+  <p>
+    <button type='button' {{action 'login' username password}}> Iniciar Sesión </button>
+  </p>
+</div>
+
+{{outlet}}

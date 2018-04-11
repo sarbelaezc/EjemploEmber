@@ -1,0 +1,18 @@
+<div class='login'>
+  <p>
+    {{input type='number' min='-1000' max='1000' value=num1}}
+    &nbsp;
+    +
+    &nbsp;
+    {{input type='number' min='-1000' max='1000' value=num2}}
+    &nbsp;
+    =
+    &nbsp;
+    {{result}}
+  </p>
+  <p>
+    <button type='button' {{action 'calculate' num1 num2 result}}> Calcular </button>
+  </p>
+</div>
+
+{{outlet}}
